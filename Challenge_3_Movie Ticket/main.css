@@ -1,0 +1,243 @@
+/* Write your CSS code here */
+
+/* Top Image */
+.moviePosterBox{
+    height:30vh;
+    width:100vw;
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/03/28/12/guardians-galaxy.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+/* Dark overlay */
+.moviePosterBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+
+    z-index: 0;
+}
+
+.backButton{
+    position:absolute;
+    left:10px;
+    top:5px;
+    color:white;
+    z-index: 1;
+        /* Dark semi-transparent background */
+}
+
+.posterInfo{
+    position:absolute;
+    bottom:5px;
+    color:white;
+    left:10px;
+    z-index: 1;
+}
+/* Top Image End */
+
+
+.seatInfo{
+    display:flex;
+    justify-content:space-evenly;
+    align-content:center;
+    font-size:1.5rem;
+    margin-top:0.8rem;
+    margin-bottom:0.8rem;
+}
+
+.seatSelection{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    font-size:40px;
+}
+
+@media (max-width:768px){
+    .seatSelection, .seatInfo{
+        font-size:20px;
+    }
+}
+
+
+
+.seatContainer{
+    display: flex;
+    justify-content:space-around;
+    width:95%;
+   
+}
+.aisle{
+    width:10%;
+    display:flex;
+    text-orientation:upright;
+    writing-mode:vertical-lr;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.leftSeats, .rightSeats{
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.leftSeatsRow, .rightSeatsRow{
+    display:flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.seatNumbers{
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+}
+
+.seatAvailable{
+    color:rgb(91 117 127);;
+}
+.seatSelected{
+    color:rgb(209 80 122);;
+}
+.seatBooked{
+    color:rgb(205 216 222);;
+}
+
+.screen {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.3); /* Light text color */
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px 0;
+}
+
+/* Curved Line Effect */
+.screen::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Shadow fade effect */
+    border-radius: 50% / 100%;
+}
+
+/* Glow Effect */
+.screen::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 10%;
+    width: 80%;
+    height: 20px;
+    background: radial-gradient(circle, rgba(183, 255, 0, 0.5), rgba(162, 34, 34, 0)); /* White glow effect */
+    border-radius: 50% / 100%;
+    filter: blur(10px); /* Soft glow */
+}
+
+
+
+.aisle {
+    background: linear-gradient(to bottom, #8B0000, #B22222, #FF0000); /* Rich red gradient */
+    color: gold; /* Luxurious gold text */
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    border-left: 5px solid gold; /* Gold trim on left */
+    border-right: 5px solid gold; /* Gold trim on right */
+    padding: 10px 0;
+    text-align: center;
+    writing-mode: vertical-rl; /* Rotates text vertically */
+    text-orientation: upright;
+    box-shadow: 0px 5px 40px gold; /* Shadow for depth */
+    position: relative;
+}
+
+/* Price Calculator Container */
+.priceCalculator {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Header Tags (Date, Tickets, TOTAL) */
+.priceInfoTags {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    color: #555;
+}
+
+/* Price Info (Input, Count, Total Fee) */
+.priceInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* NEXT Button */
+.priceNext a {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.priceNext a:hover {
+    background-color: #218838;
+}
+
+.priceNext a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+    background-color: green;
+    border-color: green;
+    border-width: 1px;
+    border-style: groove;
+    margin: 5px 10px;
+}
+
+/* Optional: Add glowing lights effect */
+@keyframes glow {
+    0% { box-shadow: 0px 5px 40px rgba(173, 171, 48, 0.468); }
+    50% { box-shadow: 0px 5px 40px rgba(77, 14, 160, 0.8); }
+    100% { box-shadow: 0px 5px 40px rgba(13, 91, 37, 0.4); }
+}
+
+.aisle:hover {
+    animation: glow 1.5s infinite alternate;
+}
+

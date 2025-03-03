@@ -1,0 +1,118 @@
+
+.containerBox{
+    width: 100%;
+    min-height: 100%;
+    background-color: 012A4A;
+    
+}
+
+.topBar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    color:white;
+    border-bottom: 1px solid gray;
+    
+}
+
+span.findFriends{
+    margin-left:20px;
+}
+
+.searchBox{
+    width: 90%;
+    background-color: #2d3443;
+    justify-self: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+.searchBoxText{
+    width: 90%;
+    background-color: #2d3443;
+    border-width: 0px;
+    
+}
+
+.fa-arrow-left{
+    color: white;
+}
+
+.fa-magnifying-glass{
+    color:7D8597;
+    margin-left:10px;
+}
+
+.userListBox, .userList{
+    padding:0px;
+    margin:0px;
+}
+
+.userList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.userListBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userList{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userListRow{
+    background-color: 33415C;
+    color: white;
+    font-weight: bold;
+    width: 90%;
+    list-style:none;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.profileImg{
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: 0466C8;
+    border-style: solid;
+    margin-right: 10px;
+}
+.profileImgName{
+    display: flex;
+    
+}
+
+.userListName{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.followBtn{
+    border: 2px gray solid;
+    justify-self: flex-end;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius: 50px;   
+}
+.notFollowing{
+    background-color: 4cc9f0;
+}
+
+.following{
+    background-color: 7209b7;
+}

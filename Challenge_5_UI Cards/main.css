@@ -1,0 +1,54 @@
+/* Write your CSS code here */
+html, body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(231 235 243);
+}
+.container{
+    height: 100vh;
+    width: 100wv;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    
+    padding:10px;
+    margin:20px;
+    border: 2px solid white;
+    background-color: white;
+}
+.cardTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    max-width: 100%;
+}
+.cardTitleContainer span{
+
+    margin:2px;
+    font-weight: bold;
+
+   
+}
+.cardTitle{
+    width: 80%;
+         word-wrap: break-word;
+            overflow-wrap: break-word;
+}
+
+.cardImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.cardBody{
+    max-width: 100%;
+}

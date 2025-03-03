@@ -1,0 +1,90 @@
+body{
+    margin:0px;
+    padding:0px;
+    background: linear-gradient(120deg, #ff00cc, #333399);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.mainContainer{
+    width: 90%;
+    height: auto;
+    padding:0px 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin:20px 30px;
+    padding-bottom: 100px;
+}
+
+.box1{
+    padding:30px 20px;
+}
+
+.boxTitle{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.boxList{
+    list-style: none;
+    margin:0px;
+    padding:0px;   
+}
+
+.listRow{
+    font-size:1rem;
+}
+
+
+.boxIcon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.boxIcon i{
+    font-size: 2rem;
+    padding:1rem;
+    margin: 0.5rem 0rem;
+    border-radius: 50%;
+}
+
+.newsIcon{
+    color: rgb(121 193 249);
+    background-color: rgb(241 248 254);;
+}
+
+.giftIcon{
+    color: rgba(99, 31, 194, 0.782);
+    background-color: rgb(255, 209, 255);
+}
+
+.productIcon{
+    color: lightcoral;
+    background-color: rgb(255, 210, 210);
+}
+
+.hornIcon{
+    color: rgb(255, 153, 0);
+    background-color: rgb(255, 213, 179);
+}
+
+.toggle-button span{
+    color:purple;
+    cursor: pointer;
+}
+
+.hiddenItem{
+    display:none;
+}
+
+.show-more{
+    
+}
+
+.show-less{
+    display: none;
+}
