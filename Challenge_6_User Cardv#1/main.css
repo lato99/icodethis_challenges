@@ -1,0 +1,102 @@
+html, body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F5F8FF;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    border: 10px white solid;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 400px;
+}
+.cardHeader{
+
+    width: 100%;
+    display: block;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backgroundCircle{
+    position: relative;
+    display: inline;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+border: 5px gray solid;
+    background-color: white;
+    
+}
+img{
+    position: absolute;
+        width: 100px;
+            border-radius: 50%;
+            border: 5px gray solid;
+            height: 100px;
+}
+.imageTop img{
+    top:0px;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.imageTopLeft img {
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, 0%);
+}
+.imageTopRight img {
+    top: 0px;
+    right: 0px;
+    transform: translate(50%, 0%);
+}
+.imageBottomLeft img {
+    bottom: 0px;
+    left: 40%;
+    transform: translate(-100%, 20%);
+}
+
+.imageBottomRight img {
+    bottom: 0px;
+    right: 40%;
+    transform: translate(100%, 20%);
+}
+.cardDescription{
+    padding: 0px 0px;
+    margin: 20px 10px;
+    text-align: center;
+}
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardTitleText{
+    font-weight: bold;
+    margin: 0px;
+}
+.cardButton{
+    text-transform: uppercase;
+    color:white;
+    border-style: solid;
+    background-color: #6B81ED;
+    width: 50%;
+    border-radius: 50px;
+    border-color: #6B81ED;
+  
+    border-width: 10px;
+}
