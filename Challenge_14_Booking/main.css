@@ -1,0 +1,13 @@
+/* Write your CSS code here */
+html,body{
+    height:100vh;
+    width: 100vw;
+    background-color: gray;
+}
+
+.selected-seat{
+    background-color: #251F43;
+}
+.selected-seat{
+    color: white;
+}
