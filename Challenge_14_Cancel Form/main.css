@@ -1,0 +1,50 @@
+/* Write your CSS code here */
+/* Write your CSS code here */
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FEF6EC;
+}
+
+.raindrop {
+    position: absolute;
+    z-index: 2;
+    width: 2px;
+    height: 15px;
+    background: rgba(173, 216, 230, 0.6);
+    animation: fall linear;
+}
+
+@keyframes fall {
+    0% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 95vh;
+        opacity: 1;
+    }
+}
+
+.mainData{
+    position:relative;
+    z-index: 100;
+}
+
+.rating-number{
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    background-color: gray;
+    
+}
+
+.rating-number-active{
+    background-color:orangered;
+    color: white;
+}

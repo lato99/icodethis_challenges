@@ -1,0 +1,35 @@
+/* Write your CSS code here */
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+#prevItem{
+    left:5%;
+    top:90%;
+    z-index: 100;
+}
+
+#nextItem {
+    right: 5%;
+    top: 90%;
+    z-index: 100;
+}
+
+.color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid #333;
+    /* black border so white colors are visible */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-circle:hover {
+    transform: scale(1.2);
+}
